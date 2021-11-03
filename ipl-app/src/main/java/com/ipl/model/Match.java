@@ -2,8 +2,12 @@ package com.ipl.model;
 
 import java.time.LocalDate;
 
-public class Match {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class Match {
+	@Id
 	private Long id;
 	private String city;
 	private LocalDate date;
