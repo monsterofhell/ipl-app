@@ -16474,3 +16474,6 @@ Caused by: org.postgresql.util.PSQLException: ERROR: sequence "hibernate_sequenc
 2021-11-05 13:25:46.770  INFO 3764 --- [restartedMain] c.i.b.JobCompletionNotificationListener  : Chennai Super Kings:178:106
 2021-11-05 13:25:46.854  INFO 3764 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] completed with the following parameters: [{run.id=47}] and the following status: [COMPLETED] in 3s116ms
 2021-11-05 13:25:46.855  INFO 3764 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-05 16:10:12.695  INFO 3764 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-05 16:10:12.695  INFO 3764 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-05 16:10:12.698  INFO 3764 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms

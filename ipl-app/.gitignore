@@ -6,6 +6,7 @@ target/
 
 ### React App ###
 /src/frontend/node_modules/
+.log
 
 ### STS ###
 .apt_generated
