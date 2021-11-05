@@ -1,8 +1,11 @@
 package com.ipl.model;
 
+import java.util.ArrayList;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 @Entity
 public class Team {
@@ -13,6 +16,13 @@ public class Team {
 	private String teamName;
 	private Long totalMatches;
 	private Long totalWins;
+	
+	@Transient
+	ArrayList<Match> latestMatches;
+	
+	public Team() {
+		
+	}
 	public long getId() {
 		return id;
 	}
@@ -33,6 +43,12 @@ public class Team {
 	}
 	public Long getTotalWins() {
 		return totalWins;
+	}
+	public ArrayList<Match> getLatestMatches() {
+		return latestMatches;
+	}
+	public void setLatestMatches(ArrayList<Match> latestMatches) {
+		this.latestMatches = latestMatches;
 	}
 	public void setTotalWins(Long totalWins) {
 		this.totalWins = totalWins;
